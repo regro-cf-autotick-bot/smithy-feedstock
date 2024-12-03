@@ -11,7 +11,7 @@ sed -i 's/id "java-library"/id "java-library"\nid "com.github.jk1.dependency-lic
 # Build with gradle and copy outputs
 ./gradlew clean build
 ./gradlew generateLicenseReport
-find . -name '*.jar' | rg "build/libs" | xargs -I % cp % ${PREFIX}/libexec/${PKG_NAME}
+find . -name '*.jar' | grep "build/libs" | xargs -I % cp % ${PREFIX}/libexec/${PKG_NAME}
 
 # Create bash and batch files
 tee ${PREFIX}/bin/smithy << EOF
