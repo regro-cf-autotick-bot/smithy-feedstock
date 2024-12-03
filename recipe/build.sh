@@ -18,6 +18,7 @@ tee ${PREFIX}/bin/smithy << EOF
 #!/bin/sh
 exec \${JAVA_HOME}/bin/java -jar \${CONDA_PREFIX}/libexec/smithy/smithy-cli-${PKG_VERSION}.jar "\$@"
 EOF
+chmod +x ${PREFIX}/bin/smithy
 
 tee ${PREFIX}/bin/smithy.cmd << EOF
 call %JAVA_HOME%\bin\java -jar %CONDA_PREFIX%\libexec\smithy\smithy-cli-${PKG_VERSION}.jar %*
