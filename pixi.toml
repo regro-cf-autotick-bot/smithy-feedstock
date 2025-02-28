@@ -4,7 +4,7 @@
 
 [project]
 name = "smithy-feedstock"
-version = "3.44.9"
+version = "3.45.4"
 description = "Pixi configuration for conda-forge/smithy-feedstock"
 authors = ["@conda-forge/smithy"]
 channels = ["conda-forge"]
